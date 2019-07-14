@@ -1,12 +1,21 @@
 function toggleQuiz() {
     var showQuiz = document.getElementById("myQuiz");
     var showStartbutton = document.getElementById("startButton");
+
     if (showQuiz.style.display === "none") {
         showQuiz.style.display = "block";
+        showStartbutton.style.display = "none";
 
     } else {
         showQuiz.style.display = "none";
     }
+
+        setTimeout(sixtySeconds, 1000 * 60);
+
+        function sixtySeconds() {
+            showQuiz.style.display = "none";
+        }   
+
 }
 
 
