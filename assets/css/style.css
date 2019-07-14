@@ -2,6 +2,25 @@ h1 {
     text-align: center;
 }
 
+#divButton {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#startButton {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    background: rgba(3, 3, 3, 0.2);
+    border: none;
+    padding: 40px 100px;
+    transition: 0.5s;
+}
+
+#startButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
 .container {
     text-align: center;
     display: none;
@@ -15,4 +34,5 @@ body {
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
+    margin: 0 auto;
 }
