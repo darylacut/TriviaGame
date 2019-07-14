@@ -26,6 +26,11 @@ h1 {
     display: none;
 }
 
+#Results {
+    text-align: center;
+    display: none;
+}
+
 body {
     background-image: url("../images/journey-game-14423-14873-hd-wallpapers.jpg");
     background-repeat: no-repeat;
