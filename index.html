@@ -25,50 +25,50 @@
 
         <div id="myQuiz">
 
-           <form>
+        <!--   <form> -->
                 <p>What type of animal is Bambi?</p>
-                <input type="radio" name="bambi" value="gazelle"> gazelle<br>
-                <input type="radio" name="bambi" value="deer"> deer<br>
-                <input type="radio" name="bambi" value="antelope"> antelope<br>  
+                <input type="radio" name="bambi" id="gazelle" value="gazelle"> gazelle<br>
+                <input type="radio" name="bambi" id="deer" value="deer"> deer<br>
+                <input type="radio" name="bambi" id="antelope" value="antelope"> antelope<br>  
                 <br>
                 <br>
                 
                 <p>Which country has a maple leaf on its flag?</p>
-                <input type="radio" name="maple" value="Canada"> Canada<br>
-                <input type="radio" name="maple" value="Japan"> Japan<br>
-                <input type="radio" name="maple" value="Russia"> Russia<br>  
+                <input type="radio" name="maple" id="Canada" value="Canada"> Canada<br>
+                <input type="radio" name="maple" id="Japan" value="Japan"> Japan<br>
+                <input type="radio" name="maple" id="Russia" value="Russia"> Russia<br>  
                 <br>
                 <br>
 
                 <p>Who wrote the Harry Potter Series?</p>
-                <input type="radio" name="author" value="J.R.R. Tolkien"> J.R.R. Tolkien<br>
-                <input type="radio" name="author" value="George R.R. Martin"> George R.R. Martin<br>
-                <input type="radio" name="author" value="J.K. Rowling"> JK Rowling<br>  
+                <input type="radio" name="author" id="J.R.R. Tolkien" value="J.R.R. Tolkien"> J.R.R. Tolkien<br>
+                <input type="radio" name="author" id="George R.R. Martin" value="George R.R. Martin"> George R.R. Martin<br>
+                <input type="radio" name="author" id= "J.K. Rowling" value="J.K. Rowling"> J.K. Rowling<br>  
                 <br>
                 <br>
                 
                 <p>In the comics, what is the name of Calvin's pet tiger?</p>
-                <input type="radio" name="pet" value="Tigger"> Tigger<br>
-                <input type="radio" name="pet" value="Hobbes"> Hobbes<br>
-                <input type="radio" name="pet" value="Battle Cat"> Battle Cat<br>  
+                <input type="radio" name="pet" id="Tigger" value="Tigger"> Tigger<br>
+                <input type="radio" name="pet" id="Hobbes" value="Hobbes"> Hobbes<br>
+                <input type="radio" name="pet" id="Battle Cat" value="Battle Cat"> Battle Cat<br>  
                 <br>
                 <br>
 
                 <p>In a standard pack of cards, which king is the only one to not have a moustache?</p>
-                <input type="radio" name="king" value="King of Diamonds"> King of Diamonds<br>
-                <input type="radio" name="king" value="King of Spades"> King of Spades<br>
-                <input type="radio" name="king" value="King of Hearts"> King of Hearts<br>
+                <input type="radio" name="king" id="King of Diamonds" value="King of Diamonds"> King of Diamonds<br>
+                <input type="radio" name="king" id="King of Spades" value="King of Spades"> King of Spades<br>
+                <input type="radio" name="king" id="King of Hearts" value="King of Hearts"> King of Hearts<br>
                 <br>
                 <br>  
     
-                <input type="submit" onclick="endGame()" id="doneButton" value="Submit">
-                <!-- <button >Get Results</button>  -->
-            </form>
+                <input type="submit" id="doneButton" value="Submit" onclick="endGame()">
+                <!-- <button >Get Results</button>  
+            </form>  -->
         </div>
 
         <div id="results">
-            <p>Correct Answers:<span></span></p>
-            <p>Wrong Answers:<span></span></p>
+            <p>You Got <span id="correct"></span> Correct Answers</p>
+            <p>And <span id="incorrect"></span> Wrong Answers</p>
         </div>
     
 </body>
