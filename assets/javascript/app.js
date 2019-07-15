@@ -24,17 +24,15 @@ function toggleQuiz() {
         }   
 
 }
+    
 
+function getResults () {
+    var showQuiz = document.getElementById("myQuiz");
+    var showStartbutton = document.getElementById("startButton");
+    var showResults = document.getElementById("results");
 
-//var points = 0;
-//var rightAnswers = 0;
-//var wrongAnswers = 0;
-
-function checkAnswers () {
-    if (document.getElementById("deer").checked) {
-        sixtySeconds (); 
-    }
-
+    showQuiz.style.display = "none";
+    showResults.style.display = "block";
 }
 
 // {
