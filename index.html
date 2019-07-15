@@ -25,7 +25,7 @@
 
         <div id="myQuiz">
 
-           
+           <form>
                 <p>What type of animal is Bambi?</p>
                 <input type="radio" name="bambi" value="gazelle"> gazelle<br>
                 <input type="radio" name="bambi" value="deer"> deer<br>
@@ -33,7 +33,7 @@
                 <br>
                 <br>
                 
-                <p>Which country has a maple leaf on it's flag?</p>
+                <p>Which country has a maple leaf on its flag?</p>
                 <input type="radio" name="maple" value="Canada"> Canada<br>
                 <input type="radio" name="maple" value="Japan"> Japan<br>
                 <input type="radio" name="maple" value="Russia"> Russia<br>  
@@ -61,9 +61,9 @@
                 <br>
                 <br>  
     
-
-            <button onclick="endGame()" id="doneButton">Get Results</button>
-                
+                <input type="submit" onclick="endGame()" id="doneButton" value="Submit">
+                <!-- <button >Get Results</button>  -->
+            </form>
         </div>
 
         <div id="results">
