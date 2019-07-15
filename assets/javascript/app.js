@@ -2,7 +2,9 @@
 
    
 function toggleQuiz() {
-
+    var correct = 0;
+    var incorrect = 0;
+    
     var showQuiz = document.getElementById("myQuiz");
     var showStartbutton = document.getElementById("startButton");
     var showResults = document.getElementById("results");
@@ -24,9 +26,9 @@ function toggleQuiz() {
         }   
 
 }
-    
 
-function getResults () {
+
+function endGame () {
     var showQuiz = document.getElementById("myQuiz");
     var showStartbutton = document.getElementById("startButton");
     var showResults = document.getElementById("results");
@@ -34,6 +36,8 @@ function getResults () {
     showQuiz.style.display = "none";
     showResults.style.display = "block";
 }
+
+
 
 // {
     
