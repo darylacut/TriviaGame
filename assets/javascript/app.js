@@ -18,7 +18,7 @@ function toggleQuiz() {
     }
 
 
-        setTimeout(sixtySeconds, 1000 * 10);
+        setTimeout(sixtySeconds, 1000 * 50);
 
         function sixtySeconds() {
 
