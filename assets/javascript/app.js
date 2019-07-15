@@ -1,6 +1,12 @@
+
+
+   
 function toggleQuiz() {
+
     var showQuiz = document.getElementById("myQuiz");
     var showStartbutton = document.getElementById("startButton");
+    var showResults = document.getElementById("results");
+
 
     if (showQuiz.style.display === "none") {
         showQuiz.style.display = "block";
@@ -10,10 +16,11 @@ function toggleQuiz() {
         showQuiz.style.display = "none";
     }
 
-        setTimeout(sixtySeconds, 1000 * 60);
+        setTimeout(sixtySeconds, 1000 * 10);
 
         function sixtySeconds() {
             showQuiz.style.display = "none";
+            showResults.style.display = "block";
         }   
 
 }
@@ -23,10 +30,14 @@ function toggleQuiz() {
 //var rightAnswers = 0;
 //var wrongAnswers = 0;
 
+function checkAnswers () {
+    if (document.getElementById("deer").checked) {
+        sixtySeconds (); 
+    }
 
-//$("#endGame").on('click', function (checkAnswers);
+}
 
-//function checkAnswers () {
+// {
     
   //  if(document.getElementByValue('gender_Male').checked) {
         //Male radio button is checked
