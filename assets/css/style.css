@@ -4,7 +4,8 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#divButton {
+#divButton,
+#countdownTimer {
     text-align: center;
     margin: 0 auto;
 }

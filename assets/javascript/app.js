@@ -1,4 +1,8 @@
 
+
+
+
+
     
 function toggleQuiz() {
     var correctCount = 0;
@@ -7,16 +11,38 @@ function toggleQuiz() {
     var showQuiz = document.getElementById("myQuiz");
     var showStartbutton = document.getElementById("startButton");
     var showResults = document.getElementById("results");
+    var showTimer = document.getElementById("countdownTimer");
+
 
    
     if (showQuiz.style.display === "none") {
         showQuiz.style.display = "block";
+        showTimer.style.display = "block";
         showStartbutton.style.display = "none";
 
     } else {
         showQuiz.style.display = "none";
     }
 
+
+    var number = 50;
+    var intervalId;
+   
+   
+    run();
+
+    function run() {
+       clearInterval(intervalId); 
+       intervalId = setInterval(decrement, 1000);
+     }
+   
+     function decrement() {
+       number--;
+   
+       $("#countdownTimer").html("<h2>" + number + "</h2>");
+   
+     }
+    
 
         setTimeout(sixtySeconds, 1000 * 50);
 
@@ -58,6 +84,7 @@ function toggleQuiz() {
 
             showQuiz.style.display = "none";
             showResults.style.display = "block";
+            showTimer.style.display = "none";
 
             $('#correct').text(correctCount);
             $('#incorrect').text(incorrectCount); 
@@ -74,6 +101,7 @@ function endGame () {
     var showQuiz = document.getElementById("myQuiz");
     var showStartbutton = document.getElementById("startButton");
     var showResults = document.getElementById("results");
+    var showTimer = document.getElementById("countdownTimer");
 
     if (document.getElementById("deer").checked === true) {
         correctCount++;
@@ -113,5 +141,6 @@ function endGame () {
 
     showQuiz.style.display = "none";
     showResults.style.display = "block";
+    showTimer.style.display = "none";
 }
 
